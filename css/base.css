@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url('fonts.css');
+html{}
+html,body{}
+::-moz-selection{color:white;background-color:#003775;-webkit-text-stroke:initial;}
+::selection{color:white;background-color:#003775;-webkit-text-stroke:initial;}
+body{
+	font-family:'Noto Sans Korean','Noto Sans KR','Myriad Pro','돋움','dotum','sans-serif';font-size:14px;font-weight:400;color:#999;min-width:320px;
+	-webkit-text-size-adjust:none;/* 모바일에서 text 사이즈 변동 없게 */
+	-webkit-font-smoothing:subpixel-antialiased;/* antialiased or subpixel-antialiased 웹킷 브라우저 웹폰트 선명하게 처리 */
+	font-variant-ligatures:none;/* fi수정 */
+}
+button{font-family:'Noto Sans Korean','Noto Sans KR','Myriad Pro','돋움','dotum','sans-serif';cursor:pointer}
+img{
+	max-width:100%;line-height:0;font-size:0;
+	/*image-rendering:optimizeSpeed;*/ /* low quality */
+	/*image-rendering:optimizeQuality;*/ /* high quality */
+	-ms-interpolation-mode:bicubic;/* blur */
+	/* -ms-interpolation-mode:nearest-neighbor;/* sharpen */
+	/*-webkit-backface-visibility:hidden;/* css3이면가시성속성 */
+	/*backface-visibility:hidden;*/
+}
+
+/* reset */
+*{vertical-align:top;box-sizing:border-box;}
+body,button,input,textarea,select,table,h1,h2,h3,h4,h5,h6{line-height:1.35;letter-spacing:-0.35px;word-break:keep-all;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,form,fieldset,legend,label,button,input,textarea,select,optgroup,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;box-sizing:border-box}
+article,aside,footer,header,nav,section,figcaption,figure,main,details,menu{display:block}
+blockquote,q{quotes:none}
+blockquote::before,blockquote::after,q::before,q::after{content:'';content:none}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+template{display:none}
+[hidden]{display:none}
+summary{display:list-item}
+pre{font:inherit;color:inherit;word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-break:break-all;}
+ol,ul{list-style:none}
+dt,dd{display:block}
+table{width:100%;border-collapse:collapse;border-spacing:0;}
+caption,legend{overflow:hidden;font-size:0;line-height:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+svg:not(:root){overflow:hidden}
+canvas{display:inline-block}
+img{max-width:100%;border-style:none;vertical-align:top}
+fieldset,img{border:none}
+button,input{overflow:visible}
+button,select{text-transform:none}
+input,button,select{vertical-align:top}
+input,button,select,textarea{font-size:inherit;box-sizing:border-box;}
+input[disabled],input[readonly]{/*cursor:not-allowed;background-color:#eaeaea;*/}
+button,[type="button"],[type="reset"],[type="submit"]{border:0 none;background:none;cursor:pointer;-webkit-appearance:button}
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;}
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}
+[type="checkbox"],[type="radio"]{}
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+textarea{display:block;overflow:auto;resize:vertical;}
+input,textarea,input::placeholder,textarea::placeholder,.file-name{font-family:'Noto Sans Korean','Noto Sans KR';}
+input,textarea{color:#1e1e1e;}
+input::placeholder,textarea::placeholder,.file-name{color:#999;}
+input.strong{background-color:#fbfbfb}
+input.strong::placeholder{color:#000000;}
+address,em,i{font-style:normal}
+hr{box-sizing:content-box;height:0;overflow:visible;margin:0;padding:0;border:0}
+a{background-color:transparent;-webkit-text-decoration-skip:objects;color:inherit;cursor:pointer;text-decoration:none}
+a:link,a:visited{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}
+.ir{overflow:hidden;height:0;font-size:0;text-indent:-9999px;}
+.blind{display:block;position:absolute;overflow:hidden;width:0;height:0}
+.clear{*zoom:1}
+.clear:after{content:' ';display:block;clear:both;}
+.cb{clear:both;}
+.float-left{float:left;}
+.float-right{float:right;}
+.none_blank{font-size:0;line-height:0;letter-spacing:-4px;} /* 이미지여백삭제 (letter-spacing:window 사파리) */
+@-moz-document url-prefix(){
+	.none_blank{letter-spacing:0;}
+}
