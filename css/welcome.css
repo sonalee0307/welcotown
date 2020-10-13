@@ -10,24 +10,21 @@ body{height:100%;background:#f8f8f8;}
 .pizza{top:100px;left:950px;}
 .pizza .click{top:-38px;right:-44px;}
 
-
-
-
 .omelet{top:433px;left:944px;}
 .omelet .click{top:-60px;right:-14px;}
 
 
-.modal-wrap{position:absolute;top:67px;left:18px;width:920px;border-radius:10px;opacity:0;visibility:hidden;transition:visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;z-index:1000;}
+.modal-wrap{position:absolute;border-radius:10px;opacity:0;visibility:hidden;z-index:1000;}
 .modal-wrap .modal-content{position:relative;padding:133px 31px 40px;}
 .modal-wrap .modal-close{position:absolute;top:34px;right:34px;}
 
-.show-modal{opacity:1;visibility:visible;transform:scale(1.0);transition:visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;}
+.show-modal{opacity:1;visibility:visible;}
 
 .modal-video{overflow:hidden;position:relative;width:100%;height:0;padding-bottom:56.25%;}
 .modal-video:after{display:block;clear:both;content:'';}
 .modal-video embed,.modal-video iframe,.modal-video object,.modal-video video,.modal-video > img {position:absolute;top:0;left:0;width:100%;height:100%;*height:auto;*min-height:100%;}
 
-#pizza-modal{background:#f4d2d2}
-#omelet-modal{background:#f7f0c1}
+#pizza-modal{top:324px;left:536px;width:1024px;background:#f4d2d2}
+#omelet-modal{top:67px;left:18px;width:920px;background:#f7f0c1}
 
 /* .close{width:48px;height:48px;border-radius:24px;background:#ffcf4a} */

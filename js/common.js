@@ -4,6 +4,8 @@ function modal_open(modal_id) {
 	$(".modal-wrap").removeClass("show-modal");
 	$("#pizza-modal").find("video").get(0).pause();
 	$("#omelet-modal").find("video").get(0).pause();
+	$("#pizza-modal").find("video").get(0).currentTime = 0;
+	$("#omelet-modal").find("video").get(0).currentTime = 0;
 	
 	$("#" + modal_id).addClass("show-modal");
 	$("#" + modal_id).find("video").get(0).play();
@@ -21,6 +23,7 @@ jQuery(function($){
 			$(event.target).parents('.modal-wrap').toggleClass("show-modal");
 			$(event.target).parents('.modal-wrap').find("video").get(0).pause();
 			$('#buttonclick').get(0).play();
+
 			return false;
 		}
 	});
