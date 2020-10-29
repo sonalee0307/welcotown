@@ -3,9 +3,19 @@
 function modal_open(modal_id) {
 	$(".modal-wrap").removeClass("show-modal");
 	$("#pizza-modal").find("video").get(0).pause();
-	$("#omelet-modal").find("video").get(0).pause();
 	$("#pizza-modal").find("video").get(0).currentTime = 0;
+	$("#omelet-modal").find("video").get(0).pause();
 	$("#omelet-modal").find("video").get(0).currentTime = 0;
+	$("#phone-modal").find("video").get(0).pause();
+	$("#phone-modal").find("video").get(0).currentTime = 0;
+	$("#icecream-modal").find("video").get(0).pause();
+	$("#icecream-modal").find("video").get(0).currentTime = 0;
+	$("#water-modal").find("video").get(0).pause();
+	$("#water-modal").find("video").get(0).currentTime = 0;
+	$("#grape-modal").find("video").get(0).pause();
+	$("#grape-modal").find("video").get(0).currentTime = 0;
+	$("#sewer-modal").find("video").get(0).pause();
+	$("#sewer-modal").find("video").get(0).currentTime = 0;
 	
 	$("#" + modal_id).addClass("show-modal");
 	$("#" + modal_id).find("video").get(0).play();

@@ -7,12 +7,27 @@ body{height:100%;background:#f8f8f8;}
 .area .box{position:relative;}
 .area .click{position:absolute;z-index:2;opacity:0;transition:0.5s;}
 .area .active .click{opacity:1;}
+
 .pizza{top:100px;left:950px;}
 .pizza .click{top:-38px;right:-44px;}
 
 .omelet{top:433px;left:944px;}
 .omelet .click{top:-60px;right:-14px;}
 
+.phone{top:627px;left:18px;}
+.phone .click{top:-61px;left:52px;}
+
+.icecream{top:401px;left:1136px;}
+.icecream .click{top:0;left:160px;}
+
+.water{top:741px;left:850px;}
+.water .click{top:-72px;left:-36px;}
+
+.grape{top:470px;left:1341px;}
+.grape .click{top:-38px;left:81px;}
+
+.sewer{top:278px;left:1051px;}
+.sewer .click{top:-44px;left:12px;}
 
 .modal-wrap{position:absolute;border-radius:10px;opacity:0;visibility:hidden;z-index:1000;}
 .modal-wrap .modal-content{position:relative;padding:133px 31px 40px;}
@@ -26,5 +41,10 @@ body{height:100%;background:#f8f8f8;}
 
 #pizza-modal{top:324px;left:536px;width:1024px;background:#f4d2d2}
 #omelet-modal{top:67px;left:18px;width:920px;background:#f7f0c1}
+#phone-modal{top:78px;left:226px;width:920px;background:#d3e6b2}
+#icecream-modal{top:393px;left:117px;width:920px;background:#fde4ff}
+#water-modal{top:44px;left:29px;width:920px;background:#b2eaff}
+#grape-modal{top:280px;left:194px;width:920px;background:#cebffe}
+#sewer-modal{top:322px;left:121px;width:920px;background:#c5cde4}
 
 /* .close{width:48px;height:48px;border-radius:24px;background:#ffcf4a} */
