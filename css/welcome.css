@@ -1,12 +1,15 @@
 @charset "utf-8";
 body{height:100%;background:#f8f8f8;}
-#wrap{position:relative;width:1728px;height:1080px;margin:0 auto;background:url(../images/welcome_bg.jpg) no-repeat 50% 50%;}
+#wrap{position:relative;width:1728px;height:1080px;margin:0 auto;background:url(../images/welcofinal3.jpg) no-repeat 50% 50%;}
 
 
 .area{position:absolute;z-index:1}
 .area .box{position:relative;}
 .area .click{position:absolute;z-index:2;opacity:0;transition:0.5s;}
 .area .active .click{opacity:1;}
+
+.cinema{top:349px;left:432px;}
+.cinema .click{top:37px;right:-116px;}
 
 .pizza{top:100px;left:950px;}
 .pizza .click{top:-38px;right:-44px;}
@@ -29,6 +32,12 @@ body{height:100%;background:#f8f8f8;}
 .sewer{top:278px;left:1051px;}
 .sewer .click{top:-44px;left:12px;}
 
+.boat{top:305px;left:0;}
+.fountain{bottom:251px;right:516px;}
+.welcotrain{bottom:0;right:0;-webkit-clip-path: polygon(100% 30%, 100% 100%, 20% 100%, 60% 50%);clip-path: polygon(100% 30%, 100% 100%, 20% 100%, 60% 50%)}
+.welcotrain img,.boat img,.fountain img{cursor:pointer}
+
+
 .modal-wrap{position:absolute;border-radius:10px;opacity:0;visibility:hidden;z-index:1000;}
 .modal-wrap .modal-content{position:relative;padding:133px 31px 40px;}
 .modal-wrap .modal-close{position:absolute;top:34px;right:34px;}
@@ -38,12 +47,14 @@ body{height:100%;background:#f8f8f8;}
 .modal-video{overflow:hidden;position:relative;width:100%;height:0;padding-bottom:56.25%;}
 .modal-video:after{display:block;clear:both;content:'';}
 .modal-video embed,.modal-video iframe,.modal-video object,.modal-video video,.modal-video > img {position:absolute;top:0;left:0;width:100%;height:100%;*height:auto;*min-height:100%;}
+.modal-video video{outline:0;}
 
-#pizza-modal{top:324px;left:536px;width:1024px;background:#f4d2d2}
-#omelet-modal{top:67px;left:18px;width:920px;background:#f7f0c1}
-#phone-modal{top:78px;left:226px;width:920px;background:#d3e6b2}
-#icecream-modal{top:393px;left:117px;width:920px;background:#fde4ff}
-#water-modal{top:44px;left:29px;width:920px;background:#b2eaff}
+#cinema-modal{top:158px;left:268px;width:1192px;background:#a8d9db}
+#pizza-modal{top:261px;left:610px;width:1024px;background:#f4d2d2}
+#omelet-modal{top:257px;left:35px;width:920px;background:#f7f0c1}
+#phone-modal{top:188px;left:369px;width:920px;background:#d3e6b2}
+#icecream-modal{top:266px;left:185px;width:920px;background:#fde4ff}
+#water-modal{top:191px;left:121px;width:920px;background:#b2eaff}
 #grape-modal{top:280px;left:194px;width:920px;background:#cebffe}
 #sewer-modal{top:322px;left:121px;width:920px;background:#c5cde4}
 

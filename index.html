@@ -16,6 +16,59 @@
 <body>
 	<div id="wrap">
 
+
+		<div class="boat area">
+			<img src="images/boat.png" alt="boat" id="boatImg">
+		</div>
+		<div class="fountain area">
+			<img src="images/fountain.png" alt="fountain" id="fountainImg">
+		</div>
+		<div class="welcotrain area">
+			<img src="images/welcotrain.png" alt="welcotrain" id="welcotrainImg">
+		</div>
+		<script>
+			$(function(){
+				$("#boatImg").hover(
+					function(){
+						$(this).attr("src","images/boat.gif");
+					},
+					function() {
+						$(this).attr("src","images/boat.png");
+					}
+				);
+				$("#fountainImg").hover(
+					function(){
+						$(this).attr("src","images/fountain.gif");
+					},
+					function() {
+						$(this).attr("src","images/fountain.png");
+					}
+				);
+				$("#welcotrainImg").hover(
+					function(){
+						$(this).attr("src","images/welcotrain.gif");
+					},
+					function() {
+						$(this).attr("src","images/welcotrain.png");
+					}
+				);
+			});
+		</script>
+<!--
+		<script>
+		$(function(){
+			$("#welcotrainImg").hover(
+			function(){
+				alert("실행");
+				$(this).attr("src","images/welcotrain.gif");
+			},
+			function() {
+				$(this)..attr("src","images/welcotrain.png");
+				}
+			);
+		});
+		</script>
+-->
 		<audio id="blop" preload="auto">
 			<source src="media/Blop.mp3">
 		</audio>
@@ -23,13 +76,19 @@
 			<source src="media/buttonclick.mp3">
 		</audio>
 
+		<div class="cinema area">
+			<div class="box">
+				<a href="#" class="button" onclick="modal_open('cinema-modal');return false;"><img src="images/cinema_button.png" alt="cinema" /></a>
+				<p class="click"><img src="images/cinema_click.png" alt="click" /></a></p>
+			</div>
+		</div>
+
 		<div class="pizza area">
 			<div class="box">
 				<a href="#" class="button" onclick="modal_open('pizza-modal');return false;"><img src="images/pizza_button.png" alt="pizza" /></a>
 				<p class="click"><img src="images/pizza_click.png" alt="click" /></a></p>
 			</div>
 		</div>
-		<div class="close"></div>
 
 		<div class="omelet area">
 			<div class="box">
@@ -72,6 +131,19 @@
 				<p class="click"><img src="images/sewer_click.png" alt="click" /></a></p>
 			</div>
 		</div>
+
+		<div class="modal-wrap" id="cinema-modal">
+			<div class="modal-content">
+
+				<div class="modal-video">
+					<video id="cinema-modal-video" playsinline="" preload="metadata" controls="">
+						<source src="media/THeDream.mp4" type="video/mp4">
+					</video>
+				</div>
+				<a href="#" class="modal-close"><img src="images/cinema_close.png" alt=""></a>
+
+			</div><!-- // modal-content -->
+		</div><!-- // modal-wrap -->
 
 		<div class="modal-wrap" id="pizza-modal">
 			<div class="modal-content">

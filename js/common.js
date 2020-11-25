@@ -2,6 +2,8 @@
 
 function modal_open(modal_id) {
 	$(".modal-wrap").removeClass("show-modal");
+	$("#cinema-modal").find("video").get(0).pause();
+	$("#cinema-modal").find("video").get(0).currentTime = 0;
 	$("#pizza-modal").find("video").get(0).pause();
 	$("#pizza-modal").find("video").get(0).currentTime = 0;
 	$("#omelet-modal").find("video").get(0).pause();
